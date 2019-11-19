@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import numpy as np
 import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
@@ -76,10 +70,6 @@ def show_image(category = "fashion", HelpfulRate = 0):
     plt.imshow(img)
     plt.axis("off")
     plt.show()
-
-
-# In[ ]:
-
 
 
 
