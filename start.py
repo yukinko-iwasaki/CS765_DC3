@@ -6,8 +6,8 @@ import pandas as pd
 import nbinteract as nbi
 
 class visualizer():
-    def __init__(self):
-        pass
+    def __init__(data):
+        this.comboned = data
     
     ## for word count
     def show_hist_word(Category = "fashion", wordcount = 10):
@@ -75,7 +75,8 @@ class visualizer():
         plt.axis("off")
         plt.show()
 
-
+    def show_interaction_image():
+        return interact(show_image, HelpfulRate = (0,1,0.1), category = ["fashion", "video", "home_kitchen", "movies_and_TV"])
 
 
 
