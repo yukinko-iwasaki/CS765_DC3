@@ -6,7 +6,7 @@ import pandas as pd
 import nbinteract as nbi
 
 class visualizer():
-    def __init__(data):
+    def __init__(self,data):
         this.comboned = data
     
     ## for word count
@@ -77,7 +77,12 @@ class visualizer():
 
     def show_interaction_image():
         return interact(show_image, HelpfulRate = (0,1,0.1), category = ["fashion", "video", "home_kitchen", "movies_and_TV"])
-
+    
+    def show_interaction_hist_rate():
+        return show_interactive_rate(normalized = True)
+    
+    def show_interaction_hist_count():
+        return show_interactive_word(normalized = True)
 
 
 
