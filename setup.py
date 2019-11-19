@@ -3,6 +3,7 @@ import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
 from ipywidgets import interact
 import pandas as pd
+import nbinteract as nbi
 
 ## for word count
 def show_hist_word(Category = "fashion", wordcount = 10):
