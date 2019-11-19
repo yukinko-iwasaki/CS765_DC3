@@ -1,2 +1,6 @@
 #!/bin/bash
+
+# The next two lines can be skipped for notebook version 5.3 and above
+jupyter nbextension enable --py --sys-prefix widgetsnbextension
+jupyter nbextension enable --py --sys-prefix bqplot
 python start.py
