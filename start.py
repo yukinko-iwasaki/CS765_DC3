@@ -35,7 +35,7 @@ class visualizer():
             "normalized":normalized,    
             }
 
-        return nbi.hist(show_hist_word, Category = ["fashion", "movies and TV", "home and kitchen", "electronics"],  wordcount =(1, 1000, 50), options=options)
+        return nbi.hist(self.show_hist_word, Category = ["fashion", "movies and TV", "home and kitchen", "electronics"],  wordcount =(1, 1000, 50), options=options)
 
     ## for word count
     def show_hist_rate(self,Category = "fashion", stars = 1):
@@ -65,7 +65,7 @@ class visualizer():
             }
 
         plt.savefig("test")
-        return nbi.hist(show_hist_rate, Category = ["fashion", "movies and TV", "home and kitchen", "electronics"],  stars =(1, 5, 1), options=options)
+        return nbi.hist(self.show_hist_rate, Category = ["fashion", "movies and TV", "home and kitchen", "electronics"],  stars =(1, 5, 1), options=options)
 
 
     def show_image(self,category = "fashion", HelpfulRate = 0):
@@ -76,13 +76,13 @@ class visualizer():
         plt.show()
 
     def show_interaction_image(self):
-        return interact(show_image, HelpfulRate = (0,1,0.1), category = ["fashion", "video", "home_kitchen", "movies_and_TV"])
+        return self.interact(show_image, HelpfulRate = (0,1,0.1), category = ["fashion", "video", "home_kitchen", "movies_and_TV"])
     
     def show_interaction_hist_rate(self):
-        return show_interactive_rate(normalized = True)
+        return self.show_interactive_rate(normalized = True)
     
     def show_interaction_hist_count(self):
-        return show_interactive_word(normalized = True)
+        return self.show_interactive_word(normalized = True)
 
 
 
