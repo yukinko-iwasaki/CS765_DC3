@@ -1,15 +1,8 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-
-
-
 import numpy as np
 import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
 from ipywidgets import interact
 import pandas as pd
-combined = pd.read_csv("combined.csv.gz", compression = "gzip")
 
 ## for word count
 def show_hist_word(Category = "fashion", wordcount = 10):
