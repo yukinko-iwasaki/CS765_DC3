@@ -76,7 +76,7 @@ class visualizer():
         plt.show()
 
     def show_interaction_image(self):
-        return self.interact(show_image, HelpfulRate = (0,1,0.1), category = ["fashion", "video", "home_kitchen", "movies_and_TV"])
+        return interact(show_image, HelpfulRate = (0,1,0.1), category = ["fashion", "video", "home_kitchen", "movies_and_TV"])
     
     def show_interaction_hist_rate(self):
         return self.show_interactive_rate(normalized = True)
