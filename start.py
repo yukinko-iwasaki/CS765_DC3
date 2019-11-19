@@ -7,7 +7,7 @@ import nbinteract as nbi
 
 class visualizer():
     def __init__(self,data):
-        this.comboned = data
+        self.combined = data
     
     ## for word count
     def show_hist_word(Category = "fashion", wordcount = 10):
