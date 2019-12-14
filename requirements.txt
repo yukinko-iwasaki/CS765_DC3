@@ -1,4 +1,7 @@
 numpy
 ipywidgets==7.5.1
-nbinteract
-matplotlib
+plotly
+panda
+re
+ast
+
